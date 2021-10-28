@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src:  url('/asstes/fonts/GothamSSm-medium_Web.woff2') format('woff2'),
+        url('/asstes/fonts/GothamSSm-Light_Web.woff2') format('woff'),
+        url('/asstes/fonts/GothamSSm-Book_Web.woff2') format('woff3');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MyWebFont", Fallback, sans-serif;
+} 
+
+/* OVERALL CSS */
+.first-page,
+.second-page,
+.third-page {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.first-page {
+  background-image: url("/asstes/img/model-3-hero-desktop.jfif");
+}
+
+.second-page {
+  background-image: url("/asstes/img/model_3_safety_hero.png");
+}
+
+.third-page {
+  background-image: url("/asstes/img/lhd-performance-hero-desktop.jfif");
+}
+
+/* FIRST PAGE CSS */
+.first-page h1 {
+  color: white;
+  text-align: center;
+  line-height: 200px;
+  font-size: xx-large;
+}
+
+/* nav */
+nav {
+  width: 100%;
+  text-align: center;
+  position: sticky;
+}
+
+
+
+#logo {
+  padding-top: 22px;
+  padding-left: 60px;
+  float: left;
+}
+.tesla {
+  width: 150px;
+  height: 50px;
+}
+
+.central-nav button, .right-nav button {
+  background-color: transparent;
+  outline: none;
+  width: 80px;
+  height: 30px;
+  border:none;
+  border-radius: 15px;
+}
+
+.central-nav button:hover, .right-nav button:hover{
+  background-color: #818793;
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+
+
+ul li,
+a {
+  text-decoration:none;
+  display: inline;
+  text-align: center;
+  list-style-type: none;
+  color:white
+}
+
+
+
+
+.right-nav {
+  float: right;
+  width: fit-content;
+  height: 80px;
+  line-height: 80px;
+  position: relative;
+  right: 8%
+}
+
+.central-nav {
+  margin: 0 auto;
+  width: fit-content;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+}
+
+/* footer */
+.board-clock {
+  width: 58px;
+
+}
+
+footer {
+  text-align: center !important;
+}
+
+#footer-container-left {
+  text-align: center;
+    
+    
+}
+
+ footer div h2, p, h5 {
+color: white;
+}
+
+.btn {
+  background: transparent;
+  outline: none;
+  border-color: white;
+  width: 120px;
+  height: 30px;
+  border-radius: 25px;
+}
+ .btn:hover {
+   background-color: white;
+ }
+  .btn p {
+    color: black;
+  }
+
+  .footer-container {
+    position: relative;
+    top: 50%
+  }
