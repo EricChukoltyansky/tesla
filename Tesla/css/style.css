@@ -1,8 +1,25 @@
 @font-face {
-  font-family: 'MyWebFont';
-  src:  url('/asstes/fonts/GothamSSm-medium_Web.woff2') format('woff2'),
-        url('/asstes/fonts/GothamSSm-Light_Web.woff2') format('woff'),
-        url('/asstes/fonts/GothamSSm-Book_Web.woff2') format('woff3');
+  font-family: "mediumFont";
+  src: url("/asstes/fonts/GothamSSm-medium_Web.woff2") format("woff2");
+}
+@font-face {
+  font-family: "lightFont";
+  src: url("/asstes/fonts/GothamSSm-Light_Web.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "boldFont";
+  src: url("/asstes/fonts/GothamSSm-Bold_Web.woff2") format("woff3");
+}
+
+@font-face {
+  font-family: "bookFont";
+  src: url("/asstes/fonts/GothamSSm-Book_Web.woff2");
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+  scrollbar-width: none; /* for Firefox */
 }
 
 * {
@@ -10,7 +27,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "MyWebFont", Fallback, sans-serif;
-} 
+}
 
 /* OVERALL CSS */
 .first-page,
@@ -22,18 +39,12 @@
 }
 
 .second-page {
-  height :100vh;
+  height: 100vh;
   width: 100vw;
 }
 
-
 .first-page {
   background-image: url("/asstes/img/model-3-hero-desktop.jfif");
-}
-
-.second-page {
-  
-  width: 
 }
 
 .third-page {
@@ -53,48 +64,44 @@ nav {
   width: 100%;
   text-align: center;
   position: sticky;
+  top: 0;
 }
-
-
 
 #logo {
   padding-top: 22px;
-  padding-left: 60px; 
-   float: left;
+  padding-left: 60px;
+  float: left;
 }
 .tesla {
   width: 150px;
   height: 50px;
 }
 
-.central-nav button, .right-nav button {
+.central-nav button,
+.right-nav button {
   background-color: transparent;
   outline: none;
   width: 80px;
   height: 30px;
-  border:none;
+  border: none;
   border-radius: 15px;
 }
 
-.central-nav button:hover, .right-nav button:hover{
+.central-nav button:hover,
+.right-nav button:hover {
   background-color: #818793;
   transition: all 0.2s ease-in-out;
   transition-delay: 0.4s;
 }
 
-
-
-ul li,
+.first-page ul li,
 nav a {
-  text-decoration:none;
+  text-decoration: none;
   display: inline;
   text-align: center;
   list-style-type: none;
-  color:white
+  color: white;
 }
-
-
-
 
 .right-nav {
   float: right;
@@ -102,7 +109,7 @@ nav a {
   height: 80px;
   line-height: 80px;
   position: relative;
-  right: 8%
+  right: 8%;
 }
 
 .central-nav {
@@ -113,128 +120,241 @@ nav a {
   line-height: 80px;
 }
 
-footer
-.board-clock {
+footer .board-clock {
   width: 58px;
-
 }
 
 footer {
-  text-align: center !important;
+  text-align: center;
 }
 
 #footer-container-left {
   text-align: center;
-    
-    
 }
-   /* footer  */
+/* footer  */
 
 .footer-container {
-  
-  height:fit-content;
-  width:100%;
+  height: fit-content;
   display: inline;
-  position:absolute;
-  top:85% ;
+  position: absolute;
+  top: 85%;
   text-align: center;
-  left: 30%
+  left: 35%;
+  right: 0;
 }
 
-footer div h2, p, h5 {
+footer div h2,
+p,
+h5 {
   color: white;
-  }
+}
 
-  .clock {
-    width: 50px;
+.clock {
+  width: 50px;
+}
+.first-contanier {
+  position: relative;
+  left: 20%;
+}
 
-  }
-  .first-contanier{
-position:relative;
-left:20%
-  }
+.fourth-container {
+  position: relative;
+  left: 13%;
+}
 
-  .fourth-container{
-    position:relative;
-    left:13%
-  }
+.third-container {
+  position: relative;
+  left: 9%;
+}
 
-  .third-container {
-    position:relative;
-    left:9%
-  }
+.second-container {
+  position: relative;
+  left: 5%;
+}
 
-  .km {
-    font-size:xx-large
-  }
+.km {
+  font-size: xx-large;
+}
 
-  .seconds {
-    color:white;
-    text-align: center;
-    font-size:xx-large;
-  }
+.seconds {
+  color: white;
+  text-align: center;
+  font-size: xx-large;
+}
 
 .range {
-    font-size: small;
-  }
+  font-size: small;
+}
 .order-btn {
   background: transparent;
   outline: none;
   border-color: white;
   width: 120px;
-  height: 30px;
+  height: 40px;
   border-radius: 25px;
-  color: white
+  color: white;
 }
 
+.order-btn:hover {
+  background-color: white;
+  color: black;
+  transition: ease-in-out 0.6s;
+  cursor: pointer;
+}
+aside {
+  position: relative;
+  left: 1%;
+}
 
- .order-btn:hover {
-   background-color: white;
-   color:black;
-   transition: ease-in-out 0.3;
-   cursor: pointer;
- }
-  aside {
-    position: relative;
-    left: 1%;
-  }
-
-  
-
-  aside div button {
-    background: transparent;
-    border-left: 2px solid white;
-    border-right:none;
-    border-bottom:none;
-    border-top:none;
-    }
-
+aside div button {
+  background: transparent;
+  border-left: 2px solid white;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+}
 
 /* SECOND PAGE CSS */
 
+.info-container {
+  float: left;
+  height: 100%;
+  width: 415px;
+  height: 100vh;
+  background-color: white;
+  z-index: 1;
+}
 .img-container {
-
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/asstes/img/model_3_safety_hero.png");
+  background-size: 78%;
+  background-position: 50% 50%;
+  margin: auto 0;
+  padding: 0px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
 }
 
+.scroll li {
+  display: inline-block;
+}
 
+.info-container p {
+  color: black;
+  font-weight: lighter;
+  font-family: "lightFont";
+}
 
- 
+.text-container {
+  padding-top: 60px;
+  padding-left: 50px;
+}
 
+.mainText {
+  color: black;
+  font-size: 14px;
+  line-height: 23px;
+  padding-bottom: 10px;
+}
+.second-page h1 {
+  font-family: "lightFont";
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.second-page h3 {
+  text-align: center;
+  font-family: "lightFont";
+  padding-right: 50px;
+}
+
+.gray-text {
+  background-color: #e2e4e4;
+  margin: 0 auto;
+  width: 314px;
+  height: 300px;
+  border-radius: 25px;
+}
+.gray-text ul li {
+  display: list-item;
+  color: #393c41;
+  font-family: "mediumFont";
+}
+
+.gray-text ul.text-left-side {
+  float: left;
+  text-align: left;
+}
+
+.gray-text ul.text-right-side {
+  float: right;
+}
+
+.small-text {
+  font-size: 8px;
+}
+
+.gray-headline {
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.large-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.second-page ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.text-right-side li {
+  padding-bottom: 17px;
+  padding-right: 20px;
+}
+
+.text-left-side li {
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+.text-right-side,
+.text-left-side {
+  padding-top: 16px;
+}
+
+.bottom-info {
+  padding-top: 225px;
+  font-family: "lightFont";
+}
+
+/* Third Page */
+.plus-btn {
+  padding-top: 160px;
+  width:fit-content;
+}
+
+.plus,
+.learn-text,
+.order-now {
+  display:inline-block;
+  font-size: 8;
   
+}
 
+.plus {
+  padding-left:10px: 
+}
+
+.plus h3 {
+  width: 30px;
+  height: 40px;
+  border-radius: 50px;
+  border: solid 3px black;
   
-
   
-
-  
-
-  
-
-  
-
- 
-
-
-  
+}
 
 
