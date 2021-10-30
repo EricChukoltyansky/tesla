@@ -1,20 +1,22 @@
+/* FONTS */
+
 @font-face {
   font-family: "mediumFont";
   src: url("/asstes/fonts/GothamSSm-medium_Web.woff2") format("woff2");
 }
 @font-face {
   font-family: "lightFont";
-  src: url("/asstes/fonts/GothamSSm-Light_Web.woff2") format("woff");
+  src: url("/asstes/fonts/GothamSSm-Light_Web.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "boldFont";
-  src: url("/asstes/fonts/GothamSSm-Bold_Web.woff2") format("woff3");
+  src: url("/asstes/fonts/GothamSSm-Bold_Web.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "bookFont";
-  src: url("/asstes/fonts/GothamSSm-Book_Web.woff2");
+  src: url("/asstes/fonts/GothamSSm-Book_Web.woff2") format ("woff2")
 }
 
 body::-webkit-scrollbar {
@@ -33,6 +35,8 @@ body::-webkit-scrollbar {
 .first-page,
 .third-page {
   background-position: center;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -43,23 +47,25 @@ body::-webkit-scrollbar {
   width: 100vw;
 }
 
-.first-page {
-  background-image: url("/asstes/img/model-3-hero-desktop.jfif");
-}
 
-.third-page {
-  background-image: url("/asstes/img/lhd-performance-hero-desktop.jfif");
-}
+
+
 
 /* FIRST PAGE CSS */
 .first-page h1 {
   color: white;
   text-align: center;
   line-height: 200px;
-  font-size: xx-large;
+  font-size: 40px;
+  font-family: "lightFont"
 }
 
-/* nav */
+.first-page {
+  background-image: url("/asstes/img/M3-Hero-LHD-US-D.jfif");
+}
+
+/* NAV */
+
 nav {
   width: 100%;
   text-align: center;
@@ -344,17 +350,101 @@ aside div button {
   
 }
 
-.plus {
-  padding-left:10px: 
+.order-now {
+  margin: 10px;
+  background-color:transparent;
+  border: 2px solid black;
+  width: 120px;
+  height: 35px;
+  border-radius: 25px;
+  ;
 }
 
-.plus h3 {
-  width: 30px;
+.order-now:hover {
+background-color: black;
+color: white;
+transition: all 0.6s;
+cursor: pointer;
+}
+
+.plus {
+  margin-left:20px;
+  width: 40px;
   height: 40px;
   border-radius: 50%;
   border: solid 3px black;
+}
+
+.plus h2 {
+  padding-left: 10px;
+  padding-top:3px
   }
 /* Third Page */
 
+.top-container {
+  background-image: url('/asstes/img/lhd-performance-hero-desktop.jfif');
+  height: 75vh;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 
+.bottom-container {
+  background-color: white;
+  /* height: 25vh; */
+  
+}
 
+.info-container-last {
+  position: relative;
+  top: 78%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "mediumFont";
+  font-size:smaller
+  
+}
+
+.third-page-card1, .third-page-card2, .third-page-card3 {
+  display: inline-block;
+  width: 330px;
+  color: white
+}
+
+.third-page-card1 ul li {
+  display: inline-block;
+}
+
+.bottom-container: {
+  border: solid 3px red;
+  width: 600px
+}
+
+.bottom-container p, h2 {
+  color: black;
+  display: block;
+}
+
+.right-bottom-container {
+  color:black;
+  border: 3px solid green;
+  width: 420px;
+  font-size:16px;
+  margin-left:30px;
+  margin-top: 
+}
+
+.left-bottom-container {
+  
+  border: 3px solid green;
+  margin-left: 200px;
+  margin-bottom: 200px;
+
+  
+  
+}
+
+.right-bottom-container, .left-bottom-container {
+  display: inline-block;
+  
+}
