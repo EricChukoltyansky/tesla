@@ -79,6 +79,8 @@ nav {
   padding-top: 15px;
   padding-left: 60px;
   float: left;
+  /* position: fixed; */
+  z-index: 2;
 }
 .tesla {
   width: 150px;
@@ -261,6 +263,26 @@ h5 {
   width: 100%;
 }
 
+.chevron a {
+  display: flex;
+  min-height: 127.5vh;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.chevron-down {
+  fill: white;
+  margin: auto;
+  width: 2em;
+  height: 2em;
+  animation: hover-me 0.3s infinite ease-in-out alternate;
+}
+
+@keyframes hover-me {
+  100% {
+    transform: translate3d(0, 10px, 0);
+  }
+}
 /* SECOND PAGE CSS */
 
 .info-container {
@@ -406,17 +428,31 @@ h5 {
   cursor: pointer;
 }
 
-.plus {
+/* .plus-btn .learn-text > .plus {
+  background-color: black;
+  color: white
+} */
+
+.plus-btn .plus h2:hover {
+  background-color: black;
+  color: white;
+}
+
+/* .plus {
   margin-left: 20px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: solid 3px black;
-}
+} */
 
 .plus h2 {
   padding-left: 10px;
   padding-top: 3px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 3px black;
 }
 /* Third Page */
 
@@ -476,15 +512,15 @@ h2 {
   width: 36vw;
   font-size: 15px;
   margin-left: 30px;
-  margin-top: 60px;
+  margin-top: 5vh;
 }
 
 .left-bottom-container {
   display: inline-block;
-
+  font-family: "lightFont";
   margin-left: 200px;
   margin-bottom: 200px;
-  width: 30vw;
+  width: 31vw;
 }
 
 .right-bottom-container,
