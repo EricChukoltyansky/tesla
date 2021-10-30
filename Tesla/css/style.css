@@ -330,7 +330,7 @@ aside div button {
   font-family: "lightFont";
 }
 
-/* Third Page */
+
 .plus-btn {
   padding-top: 160px;
   width:fit-content;
@@ -351,10 +351,10 @@ aside div button {
 .plus h3 {
   width: 30px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 50%;
   border: solid 3px black;
-  
-  
-}
+  }
+/* Third Page */
+
 
 
