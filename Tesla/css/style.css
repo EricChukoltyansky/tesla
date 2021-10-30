@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "bookFont";
-  src: url("/asstes/fonts/GothamSSm-Book_Web.woff2") format ("woff2")
+  src: url("/asstes/fonts/GothamSSm-Book_Web.woff2") format ("woff2");
 }
 
 body::-webkit-scrollbar {
@@ -28,7 +28,7 @@ body::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "MyWebFont", Fallback, sans-serif;
+  /* font-family: "MyWebFont", Fallback, sans-serif; */
 }
 
 /* OVERALL CSS */
@@ -47,17 +47,14 @@ body::-webkit-scrollbar {
   width: 100vw;
 }
 
-
-
-
-
 /* FIRST PAGE CSS */
+
 .first-page h1 {
   color: white;
   text-align: center;
   line-height: 200px;
   font-size: 40px;
-  font-family: "lightFont"
+  font-family: "lightFont";
 }
 
 .first-page {
@@ -67,20 +64,29 @@ body::-webkit-scrollbar {
 /* NAV */
 
 nav {
-  width: 100%;
   text-align: center;
   position: sticky;
   top: 0;
+  font-family: "lightFont";
+}
+
+.central-nav ul li button,
+.right-nav ul li button {
+  font-family: "mediumFont";
 }
 
 #logo {
-  padding-top: 22px;
+  padding-top: 15px;
   padding-left: 60px;
   float: left;
 }
 .tesla {
   width: 150px;
   height: 50px;
+}
+
+.solar {
+  width: 90px !important;
 }
 
 .central-nav button,
@@ -100,8 +106,9 @@ nav {
   transition-delay: 0.4s;
 }
 
-.first-page ul li,
-nav a {
+.navbar ul li,
+.navbar a,
+.footer-container ul li {
   text-decoration: none;
   display: inline;
   text-align: center;
@@ -111,11 +118,9 @@ nav a {
 
 .right-nav {
   float: right;
-  width: fit-content;
   height: 80px;
   line-height: 80px;
-  position: relative;
-  right: 8%;
+  padding-right: 50px;
 }
 
 .central-nav {
@@ -124,7 +129,14 @@ nav a {
   display: inline-block;
   height: 80px;
   line-height: 80px;
+  vertical-align: middle;
 }
+/* aside */
+.aside ul {
+  height: 100px;
+}
+
+/* footer  */
 
 footer .board-clock {
   width: 58px;
@@ -137,8 +149,6 @@ footer {
 #footer-container-left {
   text-align: center;
 }
-/* footer  */
-
 .footer-container {
   height: fit-content;
   display: inline;
@@ -147,6 +157,7 @@ footer {
   text-align: center;
   left: 35%;
   right: 0;
+  font-family: "mediumFont";
 }
 
 footer div h2,
@@ -207,17 +218,47 @@ h5 {
   transition: ease-in-out 0.6s;
   cursor: pointer;
 }
-aside {
-  position: relative;
-  left: 1%;
+
+/*  aside scroll */
+
+.aside {
+  position: fixed;
+  z-index: 1;
+  left: 8px;
+  top: 35vh;
+  /* width: 3px; */
+  height: 35vh;
 }
 
-aside div button {
-  background: transparent;
-  border-left: 2px solid white;
-  border-right: none;
-  border-bottom: none;
-  border-top: none;
+.side-scroll a {
+  text-decoration: none;
+}
+
+.aside .side-scroll a {
+  color: #5f5959;
+  font-size: 20px;
+  font-weight: 100;
+  font-size: 28px;
+}
+
+.side-scroll a:hover {
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.aside .side-scroll span {
+  color: transparent;
+  font-family: mediumFont;
+  font-size: 10px;
+}
+
+.hover:hover + span {
+  color: white;
+}
+
+.aside.side-scroll span {
+  width: 100%;
 }
 
 /* SECOND PAGE CSS */
@@ -336,39 +377,37 @@ aside div button {
   font-family: "lightFont";
 }
 
-
 .plus-btn {
   padding-top: 160px;
-  width:fit-content;
+  width: fit-content;
+  font-family: "lightFont";
 }
 
 .plus,
 .learn-text,
 .order-now {
-  display:inline-block;
-  font-size: 8;
-  
+  display: inline-block;
+  font-size: 13px;
 }
 
 .order-now {
   margin: 10px;
-  background-color:transparent;
+  background-color: transparent;
   border: 2px solid black;
   width: 120px;
   height: 35px;
   border-radius: 25px;
-  ;
 }
 
 .order-now:hover {
-background-color: black;
-color: white;
-transition: all 0.6s;
-cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: all 0.6s;
+  cursor: pointer;
 }
 
 .plus {
-  margin-left:20px;
+  margin-left: 20px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -377,12 +416,12 @@ cursor: pointer;
 
 .plus h2 {
   padding-left: 10px;
-  padding-top:3px
-  }
+  padding-top: 3px;
+}
 /* Third Page */
 
 .top-container {
-  background-image: url('/asstes/img/lhd-performance-hero-desktop.jfif');
+  background-image: url("/asstes/img/lhd-performance-hero-desktop.jfif");
   height: 75vh;
   box-sizing: border-box;
   background-repeat: no-repeat;
@@ -392,7 +431,6 @@ cursor: pointer;
 .bottom-container {
   background-color: white;
   /* height: 25vh; */
-  
 }
 
 .info-container-last {
@@ -401,50 +439,59 @@ cursor: pointer;
   text-align: center;
   margin: 0 auto;
   font-family: "mediumFont";
-  font-size:smaller
-  
+  font-size: smaller;
 }
 
-.third-page-card1, .third-page-card2, .third-page-card3 {
+.third-page-card1,
+.third-page-card2,
+.third-page-card3 {
   display: inline-block;
   width: 330px;
-  color: white
+  color: white;
 }
 
 .third-page-card1 ul li {
   display: inline-block;
 }
 
-.bottom-container: {
-  border: solid 3px red;
-  width: 600px
+.bottom-container {
+  width: 100%;
 }
 
-.bottom-container p, h2 {
+.bottom-container p,
+h2 {
   color: black;
   display: block;
 }
 
+.bottom-container p,
+.bottom-container span h2,
 .right-bottom-container {
-  color:black;
-  border: 3px solid green;
-  width: 420px;
-  font-size:16px;
-  margin-left:30px;
-  margin-top: 
+  font-family: "lightFont";
+}
+
+.right-bottom-container {
+  color: black;
+
+  width: 36vw;
+  font-size: 15px;
+  margin-left: 30px;
+  margin-top: 60px;
 }
 
 .left-bottom-container {
-  
-  border: 3px solid green;
+  display: inline-block;
+
   margin-left: 200px;
   margin-bottom: 200px;
-
-  
-  
+  width: 30vw;
 }
 
-.right-bottom-container, .left-bottom-container {
+.right-bottom-container,
+.left-bottom-container {
   display: inline-block;
-  
+}
+
+.intern-container {
+  padding-left: 277px;
 }

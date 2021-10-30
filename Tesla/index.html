@@ -16,11 +16,11 @@
 
     <!-- FIRST PAGE -->
 
-    <div class="first-page">
+    <div class="first-page" id="page1">
 
       <!-- nav -->
 
-      <nav>
+      <nav class="navbar">
         <span id="logo">
           <svg
             class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon tesla"
@@ -48,7 +48,7 @@
               <button><a href="#">Model Y</a></button>
             </li>
             <li>
-              <button><a href="#">Solar Panels</a></button>
+              <button class="solar"><a href="#">Solar Panels</a></button>
             </li>
             <li>
               <button><a href="#">Solar Roof</a></button>
@@ -76,28 +76,20 @@
 
       <!-- side menu bar -->
 
-      <aside>
-        <div class="scroll">
-          <ul>
-            <li style="border-left: 4px solid white">Model 3</li>
-            <li style="border-left: 4px solid white">SAFETY</li>
-            <li style="border-left: 4px solid white">PERFORMANCE</li>
-            <li style="border-left: 4px solid white">All W 3HEEL DRIVE</li>
-            <li style="border-left: 4px solid white">RANGE</li>
-            <li style="border-left: 4px solid white">AUTOPILOT</li>
-            <li style="border-left: 4px solid white">INTERIOR</li>
-            <li style="border-left: 4px solid white">SPECS</li>
-            <li style="border-left: 4px solid white">ORDER</li>
-          </ul>
-        </div>
+      <div class="aside">
+       <div class="side-scroll current"><a class="hover" href="#page1">|</a>&nbsp;&nbsp;<span>MODEL 3</span></div>
+       <div class="side-scroll"><a class="hover" href="#page2">|</a>&nbsp;&nbsp;<span>SAFETY</span></div>
+       <div class="side-scroll"><a class="hover" href="#page3">|</a>&nbsp;&nbsp;<span>PERFORMANCE</span></div>
+       <div class="side-scroll"><a class="hover" href="#page1">|</a>&nbsp;&nbsp;<span>ALL-WHEEL DRIVE</span></div>
+       <div class="side-scroll"><a class="hover" href="#page1">|</a>&nbsp;&nbsp;<span>RANGE</span></div>
+       <div class="side-scroll"><a class="hover" href="#page1">|</a>&nbsp;&nbsp;<span>AUTOPILOT</span></div>
+       <div class="side-scroll"><a class="hover" href="#page1">|</a>&nbsp;&nbsp;<span>INTERIOR</span></div>
+       <div class="side-scroll"><a class="hover" href="#page1">|</a>&nbsp;&nbsp;<span>SPECS</span></div>
+       <div class="side-scroll"><a class="hover" href="#page1">|</a>&nbsp;&nbsp;<span>ORDER</span></div>
+      
 
-        <div><a href="#"></a></div>
-        <div><a href="#"></a></div>
-        <div><a href="#"></a></div>
-        <div><a href="#"></a></div>
-        <div><a href="#"></a></div>
-        <div><a href="#"></a></div>
-      </aside>
+        
+      </div>
 
 <!-- footer -->
 
@@ -155,7 +147,9 @@
       </footer>
     </div>
 
-    <div class="second-page">
+<!-- SECOND PAGE -->
+
+    <div class="second-page" id="page2">
       <div class="info-container">
         <div class="text-container">
           <div style="width: 315px">
@@ -230,7 +224,7 @@
       
       <div class="img-container"></div>
     </div>
-    <div class="third-page">
+    <div class="third-page" id="page3">
       <div class="top-container">
         <div class="info-container-last">
          <div class="third-page-card1"><ul><li><h1><svg
@@ -259,20 +253,24 @@
     </div>
     <div class="bottom-container">
       <div class="left-bottom-container">
-       <div>
-          <p>Performance</p>
-          <span><h2>Quickest Acceleration</h2></span>
+        <div class="intern-container">
+          <div>
+             <p>Performance</p>
+             <span><h2>Quickest Acceleration</h2></span>
+           </div>
+           <div>
+             <div class="plus-btn-bottom">
+               <div class="plus"><h2>+</h2></div>&nbsp;&nbsp;<div class="learn-text">LEARN MORE</div><button class="order-now">ORDER NOW</button>
+             </div>
+           </div>
+         </div>
         </div>
-        <div>
-          <div class="plus-btn-bottom">
-            <div class="plus"><h2>+</h2></div>&nbsp;&nbsp;<div class="learn-text">LEARN MORE</div><button class="order-now">ORDER NOW</button>
-          </div>
-        </div>
+        <div class="right-bottom-container">Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes and lowered suspension for total control, in all weather conditions. And a carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph* in as little as 3.1 seconds.</div>
       </div>
-      <div class="right-bottom-container">Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes and lowered suspension for total control, in all weather conditions. And a carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph* in as little as 3.1 seconds.</div>
-    </div>
-    
-    
-    </div>
-  </body>
-</html>
+      
+      
+      </div>
+    </body>
+  </html>
+
+        
