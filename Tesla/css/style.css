@@ -79,8 +79,18 @@ nav {
   padding-top: 15px;
   padding-left: 60px;
   float: left;
-  /* position: fixed; */
+  position: fixed;
   z-index: 2;
+  filter: invert(0)
+}
+
+#logo:active {
+  padding-top: 15px;
+  padding-left: 60px;
+  float: left;
+  position: fixed;
+  z-index: 2;
+  filter: invert(1)
 }
 .tesla {
   width: 150px;
@@ -122,16 +132,19 @@ nav {
   float: right;
   height: 80px;
   line-height: 80px;
-  padding-right: 50px;
+  padding-right: 30px;
+  width: 290px
 }
 
 .central-nav {
   margin: 0 auto;
-  width: fit-content;
+  width: 550px;
   display: inline-block;
   height: 80px;
   line-height: 80px;
   vertical-align: middle;
+  text-align: center;
+  padding-left: 34px
 }
 /* aside */
 .aside ul {
@@ -466,7 +479,7 @@ h5 {
 
 .bottom-container {
   background-color: white;
-  /* height: 25vh; */
+  height: 25vh;
 }
 
 .info-container-last {
@@ -498,6 +511,10 @@ h5 {
 h2 {
   color: black;
   display: block;
+}
+
+.learn-text {
+  cursor: pointer;
 }
 
 .bottom-container p,
