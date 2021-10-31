@@ -40,6 +40,7 @@ body::-webkit-scrollbar {
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  
 }
 
 .second-page {
@@ -80,18 +81,24 @@ nav {
   padding-left: 60px;
   float: left;
   position: fixed;
-  z-index: 2;
-  filter: invert(0)
+  /* z-index: 2; */
+  /* filter: invert(0); */
+  background-attachment: fixed;
+  filter: invert(0) ;
 }
 
-#logo:active {
+#logo2 {
   padding-top: 15px;
   padding-left: 60px;
   float: left;
   position: fixed;
-  z-index: 2;
-  filter: invert(1)
+  z-index: 7 !important;
+  /* filter: invert(0); */
+  /* background-attachment: fixed; */
+  filter: invert(1) ;
 }
+
+
 .tesla {
   width: 150px;
   height: 50px;
@@ -133,7 +140,7 @@ nav {
   height: 80px;
   line-height: 80px;
   padding-right: 30px;
-  width: 290px
+  width: 290px;
 }
 
 .central-nav {
@@ -144,7 +151,7 @@ nav {
   line-height: 80px;
   vertical-align: middle;
   text-align: center;
-  padding-left: 34px
+  padding-left: 34px;
 }
 /* aside */
 .aside ul {
